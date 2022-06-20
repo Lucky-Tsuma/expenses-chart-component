@@ -85,7 +85,6 @@ body {
 }
 
 .graph {
-    width: 60px;
     height: 30vh;
     border-radius: 5px;
     background-color: hsl(10, 79%, 65%);
