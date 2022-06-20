@@ -78,6 +78,10 @@ body {
     justify-content: flex-end;
 }
 
+.day {
+    width: 4vw;
+}
+
 #graphs-div{
     display: flex;
     justify-content: space-between;
