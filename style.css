@@ -3,10 +3,134 @@
     --medium-brown: hsl(28, 10%, 53%);
     --cream: hsl(27, 66%, 92%);
     --very-pale-orange: hsl(33, 100%, 98%);
+    --soft-red: hsl(10, 79%, 65%);
+    --cyan: hsl(186, 34%, 60%);
+    --soft-black: hsl(0, 0%, 25%);
+}
+
+.medium-font-text {
+    font-size: 15px;
+}
+
+.large-font-text {
+    font-size: 20px;
+}
+
+.ex-large-font-text {
+    font-size: 25px;
+}
+
+.light-weight-text {
+    font-weight: 400;
+}
+
+.heavy-weight-text {
+    font-weight: 700;
+}
+
+.medium-brown {
+    color: var(--medium-brown);
+    color: hsl(28, 10%, 53%);
 }
 
 body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background-color: hsl(28,59%,91%);
+    font-family: 'DM Sans', sans-serif;
+}
+
+#top-div {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    margin-bottom: 20px;
+    color: hsl(33, 100%, 98%);
+    color: var(--very-pale-orange);
+    border-radius: 20px;
+    background-color: hsl(10,80%,65%);
+    background-color: var(--soft-red);
+}
+
+#content-div {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    border-radius: 20px;
+    color: hsl(25, 47%, 15%);
+    color: var(--dark-brown);
+    background-color: hsl(33, 100%, 98%);
+    background-color: var(--very-pale-orange);
+}
+
+#title-div {
+    font-size: large;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+#graphs-base-div, .day {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+#graphs-div{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.graph {
+    width: 60px;
+    height: 30vh;
+    border-radius: 5px;
+    background-color: hsl(10, 79%, 65%);
+    background-color: var(--soft-red);
+}
+
+.tool-tip {
+    visibility: hidden;
+    display: flex;
+    justify-content: center;
+    border-radius: 5px;
+    margin-bottom: 3px;
+    background-color: hsl(0, 0%, 25%);
+    background-color: var(--soft-black);
+    color: hsl(33, 100%, 98%);
+    color: var(--very-pale-orange);
+}
+
+.day:hover .tool-tip {
+    visibility: visible;
+}
+
+.graph:hover {
+    opacity: 0.5;
+}
+
+.weekday {
+    display: flex;
+    justify-content: center;
+}
+
+#total-div {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+#percentage-div {
+    margin-top: 25px;
+}
+
+#percentage {
+    color: var(--dark-brown);
+    font-size: small;
+    font-weight: 700;
 }
 
 .attribution { 
