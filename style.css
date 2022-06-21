@@ -95,6 +95,10 @@ body {
     background-color: var(--soft-red);
 }
 
+.graph:hover {
+    cursor: pointer;
+}
+
 .tool-tip {
     visibility: hidden;
     display: flex;
@@ -109,6 +113,7 @@ body {
 
 .day:hover .tool-tip {
     visibility: visible;
+    cursor: pointer;
 }
 
 .graph:hover {
