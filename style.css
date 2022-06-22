@@ -151,6 +151,10 @@ body {
 
 @media (max-width: 667px) {
     .day {
-        width: 12vw;
+        width: 10vw;
+    }
+
+    .tool-tip {
+        font-size: x-small;
     }
 }
