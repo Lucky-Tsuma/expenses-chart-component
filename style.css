@@ -79,7 +79,7 @@ body {
 }
 
 .day {
-    min-width: 4vw;
+    max-width: 3.5vw;
 }
 
 #graphs-div{
