@@ -79,7 +79,7 @@ body {
 }
 
 .day {
-    max-width: 3.5vw;
+    width: 3.5vw;
 }
 
 #graphs-div{
@@ -147,4 +147,10 @@ body {
 
 .attribution a { 
     color: hsl(228, 45%, 44%); 
+}
+
+@media (max-width: 667px) {
+    .day {
+        width: 8vw;
+    }
 }
